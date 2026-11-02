@@ -15,6 +15,8 @@ import {
   X,
 } from 'lucide-react';
 import { ToastContainer, toast } from 'react-toastify';
+import logoText from '../assets/logo-text.png';
+import bannerStack from '../assets/banner-stack.png';
 
 const navigation = [
   { label: 'Home', href: '#home' },
@@ -27,7 +29,7 @@ const navigation = [
 function Brand({ footer = false }) {
   return (
     <a className={`brand${footer ? ' brand--footer' : ''}`} href="#home" aria-label="Dev Stack home">
-      <img src="/assets/logo-text.png" alt="" />
+      <img src={logoText} alt="" />
       <span>Dev Stack</span>
     </a>
   );
@@ -196,7 +198,7 @@ function App() {
           <div className="hero-visual">
             <div className="hero-orbit hero-orbit--one" />
             <div className="hero-orbit hero-orbit--two" />
-            <img className="hero-image" src="/assets/banner-stack.png" alt="A luminous stack of creative technology layers" />
+            <img className="hero-image" src={bannerStack} alt="A luminous stack of creative technology layers" />
             <div className="floating-label floating-label--top"><span className="status-dot" /> YOUR TOOLKIT, YOUR RULES</div>
             <div className="floating-label floating-label--bottom"><span className="floating-star">✳</span> Made for what comes next</div>
             <span className="hero-spark hero-spark--one">✳</span><span className="hero-spark hero-spark--two">✦</span>
